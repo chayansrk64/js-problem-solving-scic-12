@@ -72,3 +72,43 @@ function capitalizeWords(str){
 
 capitalizeWords('hello world')
 
+
+// Problem 9: Find the Factorial of a Number
+function calculateFactorial(n) {
+   
+    if (n === 0 || n === 1) return 1;
+
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i; 
+    }
+
+    return result;
+}
+
+calculateFactorial(5);
+
+// Problem 10: PingPong Challenge
+
+function pingPong() {
+    for (let i = 1; i <= 20; i++) {
+        
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("PingPong");
+        } 
+      
+        else if (i % 3 === 0) {
+            console.log("Ping");
+        } 
+       
+        else if (i % 5 === 0) {
+            console.log("Pong");
+        } 
+        
+        else {
+            console.log(i);
+        }
+    }
+}
+
+pingPong();
