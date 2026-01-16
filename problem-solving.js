@@ -20,3 +20,17 @@ function countVowel(word){
 }
 countVowel('programming');
 
+
+// Problem 3: Check for Palindrome
+
+function palindrome(word){
+    const reversed = word.toLowerCase().split('').reverse().join('');
+    if(word === reversed){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+palindrome('madam')
+
