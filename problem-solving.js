@@ -46,7 +46,12 @@ findMax([5, 1, 9, 3])
 function removeDuplicate(num){
    return [... new Set(num)]
 }
-const result = removeDuplicate([1, 2, 2, 3, 4, 4])
-console.log(result);
+removeDuplicate([1, 2, 2, 3, 4, 4])
 
 
+
+// Problem 6: Sum of All Numbers in an Array
+function sum(nums){
+    return nums.reduce((acc, curr) => acc + curr, 0)
+}
+sum([1, 2, 3, 4])
