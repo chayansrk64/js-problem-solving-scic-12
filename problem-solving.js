@@ -55,3 +55,20 @@ function sum(nums){
     return nums.reduce((acc, curr) => acc + curr, 0)
 }
 sum([1, 2, 3, 4])
+
+// Problem 7: Find Even Numbers in an Array 
+
+function getEvenNumbers(nums) {
+    return nums.filter(num => num % 2 === 0);
+}
+
+getEvenNumbers([1, 2, 3, 4, 5, 6]);
+
+
+// Problem 8: Capitalize First Letter of Each Word
+function capitalizeWords(str){
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+}
+
+capitalizeWords('hello world')
+
