@@ -43,5 +43,10 @@ function findMax(arr){
 findMax([5, 1, 9, 3])
 
 // Problem 5: Remove Duplicates from an Array
+function removeDuplicate(num){
+   return [... new Set(num)]
+}
+const result = removeDuplicate([1, 2, 2, 3, 4, 4])
+console.log(result);
 
 
