@@ -34,3 +34,14 @@ function palindrome(word){
 
 palindrome('madam')
 
+
+// Problem 4: Find the Maximum Number
+
+function findMax(arr){
+    return Math.max(...arr)
+}
+findMax([5, 1, 9, 3])
+
+// Problem 5: Remove Duplicates from an Array
+
+
