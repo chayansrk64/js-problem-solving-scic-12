@@ -1,12 +1,11 @@
 // Problem 1: Reverse a String
-
 function reverseString(str){
     return str.split('').reverse().join('')
 }
 reverseString('hello')
 
-// Problem 2: Count Vowels in a String
 
+// Problem 2: Count Vowels in a String
 function countVowel(word){
     const vowels = ['a', 'e', 'i', 'o', 'u'];
     let count = 0;
@@ -15,14 +14,13 @@ function countVowel(word){
         if(vowels.includes(c)){
             count ++;
         }
-    })
+    }) 
     return count;
 }
 countVowel('programming');
 
 
 // Problem 3: Check for Palindrome
-
 function palindrome(word){
     const reversed = word.toLowerCase().split('').reverse().join('');
     if(word === reversed){
@@ -36,11 +34,11 @@ palindrome('madam')
 
 
 // Problem 4: Find the Maximum Number
-
 function findMax(arr){
     return Math.max(...arr)
 }
 findMax([5, 1, 9, 3])
+
 
 // Problem 5: Remove Duplicates from an Array
 function removeDuplicate(num){
@@ -56,8 +54,8 @@ function sum(nums){
 }
 sum([1, 2, 3, 4])
 
-// Problem 7: Find Even Numbers in an Array 
 
+// Problem 7: Find Even Numbers in an Array 
 function getEvenNumbers(nums) {
     return nums.filter(num => num % 2 === 0);
 }
@@ -89,7 +87,6 @@ function calculateFactorial(n) {
 calculateFactorial(5);
 
 // Problem 10: PingPong Challenge
-
 function pingPong() {
     for (let i = 1; i <= 20; i++) {
         
